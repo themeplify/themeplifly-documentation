@@ -1,0 +1,16 @@
+// for font styling
+@mixin font-mixin( $font-size, $line-height, $font-weight, $color, $font-family ){
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $color;
+    font-family: $font-family;
+}
+
+// border-radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
