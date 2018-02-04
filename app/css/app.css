@@ -8785,7 +8785,7 @@ aside {
   height: 100vh;
   overflow: auto;
   border-right: 1px solid #f3f3f3;
-  width: 85%; }
+  width: 260px; }
   aside nav.sidenav h6 {
     font-weight: bolder;
     margin-bottom: 0px; }
@@ -8794,9 +8794,9 @@ aside {
   aside nav.sidenav ul.sidenav-holder > li > ul {
     padding-left: 0.9375rem;
     list-style: none; }
-    aside nav.sidenav ul.sidenav-holder > li > ul li.active a {
+    aside nav.sidenav ul.sidenav-holder > li > ul li a.active {
       color: #ff437d;
-      text-decoration: underline; }
+      text-decoration: none; }
 
 #style-4::-webkit-scrollbar-track {
   background-color: #f3f3f3; }
@@ -8829,3 +8829,9 @@ aside {
         background-color: transparent;
         border: 0px;
         padding: 0px; }
+
+.fix_pos aside {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  overflow-y: auto; }
