@@ -1,0 +1,40 @@
+h1{
+	font-size: rem(40);
+	font-weight: bold;
+	margin-bottom: rem(20);
+}
+h2{
+	font-size: rem(30);
+	color: $pink;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+h3{
+	font-size: rem(22);
+}
+h4{
+	font-size: rem(18);
+}
+h6{
+	font-size: rem(15);
+	color: $darkGray;
+	line-height: 1;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+// default anchor
+a{
+	color: $darkGray;
+	font-size: rem(15);
+	&:hover{
+		color: $pink;
+	}
+}
+p{
+	font-size: rem(14);
+	&:last-child{
+		margin-bottom: 0px;
+	}
+}

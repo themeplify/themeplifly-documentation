@@ -8726,8 +8726,7 @@ a.text-dark:focus, a.text-dark:hover {
   content: "\e8a9"; }
 
 html {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif; }
+  font-size: 16px; }
 
 body {
   font-family: "Montserrat", sans-serif; }
@@ -8739,31 +8738,94 @@ ul {
   margin: 0;
   padding: 0; }
 
-.style-guide header {
-  background: #24d3f9;
-  padding: 4.375rem;
-  color: #fff; }
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem; }
 
-.style-guide main {
-  margin-top: 30px; }
-  .style-guide main .grid-holder [class*="col-"] div {
-    background-color: #e7e9eb;
-    min-height: 100px; }
-  .style-guide main .grid-holder .tablet-grid {
-    max-width: 768px; }
-  .style-guide main .clr-palette-holder .clr {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    display: block;
-    background-color: red; }
-  .style-guide main .clr-palette-holder p {
-    margin-bottom: 0; }
-  .style-guide main .clr-palette-holder .col-md-3 {
-    margin-bottom: 1.875rem; }
-  .style-guide main section {
-    margin-bottom: 1.875rem; }
-  .style-guide main .fa {
-    font-size: 2.1875rem; }
-  .style-guide main .lnr {
-    font-size: 2.1875rem; }
+h2 {
+  font-size: 1.875rem;
+  color: #ff437d;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-bottom: 10px; }
+
+h3 {
+  font-size: 1.375rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
+h6 {
+  font-size: 0.9375rem;
+  color: #212529;
+  line-height: 1;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+a {
+  color: #212529;
+  font-size: 0.9375rem; }
+  a:hover {
+    color: #ff437d; }
+
+p {
+  font-size: 0.875rem; }
+  p:last-child {
+    margin-bottom: 0px; }
+
+header {
+  background: url(../images/header-background.png);
+  padding: 70px 0px;
+  color: #ffffff;
+  margin-bottom: 3.125rem; }
+
+aside {
+  padding: 0.625rem;
+  height: 100vh;
+  overflow: auto;
+  border-right: 1px solid #f3f3f3;
+  width: 85%; }
+  aside nav.sidenav h6 {
+    font-weight: bolder;
+    margin-bottom: 0px; }
+  aside nav.sidenav ul.sidenav-holder > li {
+    margin-bottom: 0.9375rem; }
+  aside nav.sidenav ul.sidenav-holder > li > ul {
+    padding-left: 0.9375rem;
+    list-style: none; }
+    aside nav.sidenav ul.sidenav-holder > li > ul li.active a {
+      color: #ff437d;
+      text-decoration: underline; }
+
+#style-4::-webkit-scrollbar-track {
+  background-color: #f3f3f3; }
+
+#style-4::-webkit-scrollbar {
+  width: 3px; }
+
+#style-4::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #8b8b8b; }
+
+.main-comtent-area .each-submenu-content-section {
+  margin-bottom: 40px; }
+  .main-comtent-area .each-submenu-content-section .file-list {
+    padding-left: 0.9375rem; }
+    .main-comtent-area .each-submenu-content-section .file-list ul li.card {
+      border: 0px; }
+      .main-comtent-area .each-submenu-content-section .file-list ul li.card a {
+        color: #ff437d; }
+        .main-comtent-area .each-submenu-content-section .file-list ul li.card a:hover {
+          text-decoration: none; }
+        .main-comtent-area .each-submenu-content-section .file-list ul li.card a.folder:before {
+          content: "\f114";
+          font: normal normal normal 14px/1 FontAwesome;
+          margin-right: 0.3125rem; }
+      .main-comtent-area .each-submenu-content-section .file-list ul li.card ul {
+        list-style: none;
+        padding-left: 0.9375rem; }
+      .main-comtent-area .each-submenu-content-section .file-list ul li.card .card-header {
+        background-color: transparent;
+        border: 0px;
+        padding: 0px; }

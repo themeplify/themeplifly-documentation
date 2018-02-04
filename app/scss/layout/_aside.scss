@@ -1,0 +1,50 @@
+aside{
+	padding: rem(10);
+	height:100vh;
+	overflow: auto;
+	border-right: 1px solid $lightGray;
+	width: 85%;
+	nav{
+		&.sidenav{
+			h6{
+				font-weight: bolder;
+				margin-bottom: 0px;
+			}
+			ul{
+				&.sidenav-holder{
+					& > li{
+						margin-bottom: rem(15);
+					}
+					& > li > ul{
+						padding-left: rem(15);
+						list-style: none;
+						li{
+							&.active{
+								a{
+									color: $pink;
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	background-color: $lightGray;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 3px;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #8b8b8b;
+}
