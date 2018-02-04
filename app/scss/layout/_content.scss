@@ -55,3 +55,11 @@
 		}
 	}
 }
+.fix_pos {
+    aside {
+        position: fixed;
+        top: 0;
+        left: 15px;
+        overflow-y: auto;
+    }
+}
