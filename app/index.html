@@ -58,6 +58,7 @@ If you have an older version of BeTheme than 7.4, please refer to applicable doc
                         <ul>
                           <li><a href="">Header Types</a></li>
                           <li><a href="">Logos</a></li>
+                          <li><a href="">Favicon</a></li>
                           <li><a href="">Menus and Submenus</a></li>
                         </ul>
                       </li>
@@ -108,21 +109,22 @@ If you have an older version of BeTheme than 7.4, please refer to applicable doc
             </div>
             <div class="col-md-9">
 
-              <!-- main content starts -->
+              <!-- start: main content starts -->
+              <!-- start: overview -->
               <div class="main-comtent-area">
                   <div class="each-menu-content-section">
                     <h2>Overview</h2>
 
-                    <!-- introduction -->
+                    <!-- start: introduction -->
                     <div class="each-submenu-content-section">
                       <h3>Introduction</h3>
                       <p>From Team Unifato, we thank you for purchasing our theme. Pages is carefully well thought UI frame work that is built on top of Bootstrap 4, Its hand crafted components look great on all devices and works super fast even on mobile. If there's still any issue, you can contact us through our profile page at Themeforest here, or feel free to contact us through our email.</p>
 
                       <p>For using this theme, Oscar, you would need basic understanding of HTML, CSS and Javascript, please give your question a quick Google or visit W3Schools as theme issues get top priority.</p>
                     </div>
-                    <!-- introduction -->
+                    <!-- end: introduction -->
 
-                    <!-- project structure -->
+                    <!-- start: project structure -->
                       <div class="each-submenu-content-section">
                         <h3>Project Structure</h3>
                         <p>1. Unzip the downloaded package and open the /HTML folder to find all the template files. You will need to upload these files to your hosting web server using FTP in order to use it on your website.</p>
@@ -166,14 +168,19 @@ If you have an older version of BeTheme than 7.4, please refer to applicable doc
                               </li>
                           </ul>
                         </div>
+                        <h6>Folder : assets</h6>
+                        <p>This folder is entirely dedicated for you and you can add your own images, custom css and js files, its grouped into resource folders for best practice</p>
+                        <h6>Folder : pages</h6>
+                        <p>This where the magic happens and contains pre-complied version of Pages, we do recommend updating any contents of the folder as all future updates are affected directly to this</p>
+                        <h6>Folder: images</h6>
+                        <p>This where the magic happens and contains pre-complied version of Pages, we do recommend updating any contents of the folder as all future updates are affected directly to this</p>
                       </div>
-                    <!-- project structure -->
+                    <!-- end: project structure -->
 
-                    <!-- basic HTML markup -->
+                    <!-- start: basic HTML markup -->
                       <div class="each-submenu-content-section">
                         <h3>Basic HTML Markup</h3>
-                          <code>
-                            <pre>&lt;!doctype html&gt;
+<pre>&lt;!doctype html&gt;
 &lt;html class="no-js" lang="en"&gt;
     &lt;head&gt;
         <span class="comment">&lt;!-- title --&gt;</span>
@@ -210,13 +217,161 @@ If you have an older version of BeTheme than 7.4, please refer to applicable doc
         <span class="comment">&lt;!-- javascript libraries --&gt;</span>
     &lt;/body&gt;
 &lt;/html&gt;
-                            </pre>
-                          </code>
+</pre>
                       </div>
-                    <!-- basic HTML markup -->
+                    <!-- end: basic HTML markup -->
+                    
+                    <!-- start: tools and installation -->
+                    <div class="each-submenu-content-section">
+                      <h3>Tools</h3>
+                      <p>You need a couple of tools to work with the theme, alternatively you can directly use the dist/ folder provided in the project. Refer to the following list for tools you need :</p>
+                      <h6>1. Node.js</h6>
+                      <p>For making use of this theme true power you'll need Gulp, and for Gulp you'll need Node.js to be installed on your system. Download the latest version of Node.js from <a href="">here</a></p>
+                      <h6>2. Gulp</h6>
+                      <p>After installing Node.js, you need to install Gulp on your system. Run this command in Terminal/CMD of your system: <code>npm install -g gulp</code></p>
+                      <h6>3. Install Modules of the theme</h6>
+                      <p>Open Terminal/CMD in the theme folder and run this command : <code>npm install</code>. This command will install the tools required for this Oscar, for example build tools like SASS Compiler, Autoprefixer etc.</p>
+                      <h6>4. Running the environment</h6>
+                      <p>To start working with the theme, just open Terminal/CMD in the theme folder and run <code>gulp</code>. This will start the work environment for you. Now you can edit the theme in the Code Editor of your choice.</p>
+                      <h6>5. Making Distribution Folder</h6>
+                      <p>To make deployable theme, just open Terminal/CMD in the theme folder and run this command : <code>gulp dist</code>. This will generate dist/ folder in your theme directory. You can directly upload this folder to your server.</p>
+
+                      <h3>Installation</h3>
+                      <p>Oscar is a static HTML Template so you don't need much installing on the server-side. Just upload the /dist folder to your server and you have it running.</p>
+                      <span class="badge badge-pill badge-danger">Note : </span>
+                      <p>we recomonded you to please make your one own css file & one js files and add that in your page, so whenever the update of wrapkit comes it does not affect your code.</p>
+                    </div>
+                    <!-- end: tools and installation -->
+                    <!-- end: overview -->
+
+                    <!-- start: header -->
+                      <div class="each-menu-content-section">
+                        <h2>Header</h2>
+                        <!-- start: header types -->
+                        <div class="each-submenu-content-section">
+                          <h3>Header Types</h3>
+                          <p>Header area can be easily customized by simply adding any of the following classes to the <code>header</code> tag like this:</p>
+                          <pre class="mb-4">
+    &lt;header class="header-light header-centered"&gt;
+    ...
+    &lt;/header&gt;
+                          </pre>
+                          <table class="table table-bordered">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>Class</th>
+                                <th>Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><code>.header-light</code></td>
+                                <td>Header with white background and dark text.</td>
+                              </tr>
+                              <tr>
+                                <td><code>.header-dark</code></td>
+                                <td>Header with dark background and white text.</td>
+                              </tr>
+                              <tr>
+                                <td><code>.header-center</code></td>
+                                <td>Header with center menu items and white text.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <a href="" class="btn btn-primary">Check live priview of headers</a>
+                        </div>
+                        <!-- end: header types -->
+
+                        <!-- start: logos -->
+                        <!-- end: logos -->
+                      </div>
+                      <!-- end: header -->
+
+                      <!-- start: logo -->
+                      <div class="each-submenu-content-section">
+                        <h3>Logos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus impedit provident corporis vel molestias numquam eaque? Rem dolorem doloribus, distinctio voluptates recusandae odio, dolorum quibusdam, perferendis sint corporis perspiciatis numquam.</p>
+                      </div>
+                      <!-- end: logo -->
+
+                      <!-- start: favicon -->
+                      <div class="each-submenu-content-section">
+                        <h3>Favicon</h3>
+                        <p>To change the favicon image of your site, you need to load a new ICO image in a site root or to point out a new address of the image.</p>
+                        <pre>
+                          <span class="comment">
+&lt;!-- favicon --&gt;</span>
+&lt;link rel="shortcut icon" href="images/favicon.png"&gt;
+&lt;link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"&gt;
+                        </pre>
+                      </div>
+                      <!-- end: favicon -->
+
+                      <!-- start: menus and submenus -->
+                      <div class="each-submenu-content-section">
+                        <h3>Menus and Submenus</h3>
+                        <p>Adding Menus to the header area is easy. Simply, add menus to the <code>.navbar</code> using the code below.</p>
+                        <pre class="mb-4">&lt;ul class="nav navbar-nav">
+  &lt;li class="sidebar-toggle">
+    &lt;a href="#" class="ripple">
+      &lt;i class="material-icons list-icon">menu</i>
+    &lt;/a>
+  &lt;/li>
+&lt;/ul>
+                        </pre>
+                        <h4>Submenus</h4>
+                        <p>There are 3 styles with which you can display submenus in the Header.</p>
+                        <h6>Default: Simple Dropdown Menu:</h6>
+                        <pre class="mb-4">&lt;ul class="nav navbar-nav">
+  &lt;li class="dropdown">
+    &lt;a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+      Menu Dropdown
+    &lt;/a>
+    &lt;div class="dropdown-menu">
+      &lt;a class="dropdown-item" href="#">Projects</a>
+      &lt;a class="dropdown-item" href="#">User Profile</a>
+    &lt;/div>
+  &lt;/li>
+  ...
+&lt;/ul>
+</pre>
+                        <h6>Default: Simple Dropdown Menu:</h6>
+                        <pre class="mb-4">&lt;ul class="nav navbar-nav">
+  &lt;li class="dropdown">
+    &lt;a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+      Menu Dropdown
+    &lt;/a>
+    &lt;div class="dropdown-menu">
+      &lt;a class="dropdown-item" href="#">Projects</a>
+      &lt;a class="dropdown-item" href="#">User Profile</a>
+    &lt;/div>
+  &lt;/li>
+  ...
+&lt;/ul>
+</pre>
+                        <h6>Default: Simple Dropdown Menu:</h6>
+                        <pre class="mb-4">&lt;ul class="nav navbar-nav">
+  &lt;li class="dropdown">
+    &lt;a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+      Menu Dropdown
+    &lt;/a>
+    &lt;div class="dropdown-menu">
+      &lt;a class="dropdown-item" href="#">Projects</a>
+      &lt;a class="dropdown-item" href="#">User Profile</a>
+    &lt;/div>
+  &lt;/li>
+  ...
+&lt;/ul>
+</pre>
+                      <a href="" class="btn btn-primary">Live preview of all menus and submenus</a>
+                      </div>
+                      <!-- end: menus and submenus -->
+
                   </div>
               </div>
-              <!-- main content ends -->
+              <!--end: main content ends -->
 
             </div>
           </div>

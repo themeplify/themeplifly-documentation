@@ -16,6 +16,9 @@ h3{
 h4{
 	font-size: rem(18);
 }
+h5{
+
+}
 h6{
 	font-size: rem(15);
 	color: $darkGray;
@@ -36,5 +39,8 @@ p{
 	font-size: rem(14);
 	&:last-child{
 		margin-bottom: 0px;
+	}
+	a{
+		color: $pink;
 	}
 }
