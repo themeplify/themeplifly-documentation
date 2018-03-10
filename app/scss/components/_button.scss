@@ -1,0 +1,21 @@
+.btn{
+	border-radius: rem(30);
+	font-size: rem(15);
+	font-weight: bolder;
+	padding: 8px 25px;
+	&.btn-primary{
+		background-color: $pink;
+		border: 0px;
+		&:hover{
+			background: $orange;
+		}
+		&:active, &.active{
+			border: 0px;
+			background: $orange;
+		}
+		&:focus{
+			border: 0px;
+			background: $orange;
+		}
+	}
+}

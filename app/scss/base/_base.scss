@@ -12,3 +12,10 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+span{
+	&.badge.badge-pill{
+		& + p{
+			display: inline;
+		}
+	}
+}

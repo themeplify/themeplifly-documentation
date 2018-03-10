@@ -13,6 +13,8 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarCodeply" data-offset="70">
+
+
     <!-- webpage wrapper -->
     <div class="wrapper">
 
@@ -41,8 +43,8 @@
                             <nav class="sidenav nav-docs">
                                 <ul class="sidenav-holder" id="navbarCodeply">
                                     <!-- <a class="nav-link" href="#intro">One</a>
-                                    <a class="nav-link" href="#project-structure">Two</a>
-                                    <a class="nav-link" href="#sec3">Three</a> -->
+                              <a class="nav-link" href="#project-structure">Two</a>
+                              <a class="nav-link" href="#sec3">Three</a> -->
                                     <!-- overview menu items-->
                                     <li>
                                         <h6>Overview</h6>
@@ -107,10 +109,9 @@
                             </nav>
                         </aside>
                         <!-- aside ends -->
-
                     </div>
-                    <div class="col-md-9">
 
+                    <div class="col-md-9">
                         <!-- main content starts -->
                         <div class="main-comtent-area">
                             <div class="each-menu-content-section">
@@ -231,13 +232,100 @@
                                 <!-- basic HTML markup -->
                             </div>
                         </div>
-                        <!-- main content ends -->
+                        <!-- basic HTML markup -->
+                        <!-- start: tools and installation -->
+                        <div class="each-submenu-content-section">
+                            <h3>Tools</h3>
+                            <p>You need a couple of tools to work with the theme, alternatively you can directly use the dist/ folder provided in the project. Refer to the following list for tools you need :</p>
+                            <h6>1. Node.js</h6>
+                            <p>For making use of this theme true power you'll need Gulp, and for Gulp you'll need Node.js to be installed on your system. Download the latest version of Node.js from <a href="">here</a></p>
+                            <h6>2. Gulp</h6>
+                            <p>After installing Node.js, you need to install Gulp on your system. Run this command in Terminal/CMD of your system: <code>npm install -g gulp</code></p>
+                            <h6>3. Install Modules of the theme</h6>
+                            <p>Open Terminal/CMD in the theme folder and run this command : <code>npm install</code>. This command will install the tools required for this Oscar, for example build tools like SASS Compiler, Autoprefixer etc.</p>
+                            <h6>4. Running the environment</h6>
+                            <p>To start working with the theme, just open Terminal/CMD in the theme folder and run <code>gulp</code>. This will start the work environment for you. Now you can edit the theme in the Code Editor of your choice.</p>
+                            <h6>5. Making Distribution Folder</h6>
+                            <p>To make deployable theme, just open Terminal/CMD in the theme folder and run this command : <code>gulp dist</code>. This will generate dist/ folder in your theme directory. You can directly upload this folder to your server.</p>
 
+                            <h3>Installation</h3>
+                            <p>Oscar is a static HTML Template so you don't need much installing on the server-side. Just upload the /dist folder to your server and you have it running.</p>
+                            <span class="badge badge-pill badge-danger">Note : </span>
+                            <p>we recomonded you to please make your one own css file & one js files and add that in your page, so whenever the update of wrapkit comes it does not affect your code.</p>
+                        </div>
+                        <!-- end: tools and installation -->
+                        <!-- end: overview -->
+                        <!-- start: header -->
+                        <div class="each-menu-content-section">
+                            <h2>Header</h2>
+                            <!-- start: header types -->
+                            <div class="each-submenu-content-section">
+                                <h3>Header Types</h3>
+                                <p>Header area can be easily customized by simply adding any of the following classes to the <code>header</code> tag like this:</p>
+                                <pre class="mb-4">
+    &lt;header class="header-light header-centered"&gt;
+    ...
+    &lt;/header&gt;
+                          </pre>
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.header-light</code></td>
+                                            <td>Header with white background and dark text.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-dark</code></td>
+                                            <td>Header with dark background and white text.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.header-center</code></td>
+                                            <td>Header with center menu items and white text.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="" class="btn btn-primary">Check live priview of headers</a>
+                            </div>
+                            <!-- end: header types -->
+
+                            <!-- start: logo -->
+                            <div class="each-submenu-content-section">
+                                <h3>Logos</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus impedit provident corporis vel molestias numquam eaque? Rem dolorem doloribus, distinctio voluptates recusandae odio, dolorum quibusdam, perferendis sint corporis
+                                    perspiciatis numquam.</p>
+                            </div>
+                            <!-- end: logo -->
+
+                            <!-- start: favicon -->
+                            <div class="each-submenu-content-section">
+                                <h3>Favicon</h3>
+                                <p>To change the favicon image of your site, you need to load a new ICO image in a site root or to point out a new address of the image.</p>
+                                <pre>
+                          <span class="comment">
+&lt;!-- favicon --&gt;</span>
+&lt;link rel="shortcut icon" href="images/favicon.png"&gt;
+&lt;link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"&gt;
+&lt;link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"&gt;
+                        </pre>
+                            </div>
+                            <!-- end: favicon -->
+
+                        </div>
+                        <!-- header end -->
                     </div>
                 </div>
+                <!-- main content ends -->
             </div>
-        </main>
-        <!-- main ends -->
+    </div>
+    </div>
+    </main>
+    <!-- main ends -->
 
     </div>
     <!-- webpage wrapper -->
