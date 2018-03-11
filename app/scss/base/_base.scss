@@ -11,6 +11,10 @@ img{
 ul{
 	margin: 0;
 	padding: 0;
+	li{
+		list-style: none;
+		margin-bottom: 5px;
+	}
 }
 span{
 	&.badge.badge-pill{
@@ -18,4 +22,8 @@ span{
 			display: inline;
 		}
 	}
+}
+
+section{
+	margin-bottom: 60px;
 }
