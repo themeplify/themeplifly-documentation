@@ -19,6 +19,9 @@ aside {
                         padding-left: rem(15);
                         list-style: none;
                         li {
+                            .nav-link{
+                                padding: 2px 0px;
+                            }
                             a.active {
                                 color: $pink;
                                 text-decoration: none;

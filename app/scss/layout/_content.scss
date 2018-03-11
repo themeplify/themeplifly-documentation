@@ -2,9 +2,9 @@
 	.each-submenu-content-section{
 		margin-bottom: 40px;
 		.file-list{
-			padding-left: rem(15);
 			margin-bottom: rem(20);
 			ul{
+				margin-bottom: 0px;
 				li{
 					&.card{
 						border: 0px;
@@ -16,6 +16,13 @@
 							&.folder{
 								&:before{
 									content: "\f114";
+									font: normal normal normal 14px/1 FontAwesome;
+									margin-right: rem(5);
+								}
+							}
+							&.file{
+								&:before{
+									content: "\f1c9";
 									font: normal normal normal 14px/1 FontAwesome;
 									margin-right: rem(5);
 								}
@@ -52,6 +59,19 @@
 	table{
 		td{
 			font-size: rem(14);
+		}
+	}
+	ol{
+		padding-left: 15px;
+		& > li{
+			margin-bottom: 15px;
+			ul{
+				margin-bottom: 15px;
+				li{
+					list-style: none;
+					margin-bottom: 5px;
+				}
+			}
 		}
 	}
 }

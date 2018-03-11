@@ -21,8 +21,9 @@
           <div class="row justify-content-center">
               <div class="col-md-8 text-center">
                   <h1 class="">Themeplify Documentation</h1>
-                  <p>A <b>how-to guide</b> with helpful information about BeTheme installation, capabilities, features and optionso</p>
-                  <p><b>Note:</b> this documentation applies to Version 7.4 and above only. If you have an older version of BeTheme than 7.4, please refer to applicable documentation.</p>
+                  <p>First of all, thank you for purchasing themeplify and all the best for your website. It is based on Bootstrap 4. Special attentions have been given to its responsiveness and other modern features. Please feel free to contact with us through Themeforest or via our email.
+
+                 <b>It would be better if you have some basic HTML, CSS and javascript concepts, and of course you can google or search into W3 Schools.</b></p>
               </div>
           </div>
       </div>
@@ -39,14 +40,10 @@
                   <aside role="sidebar" id="style-4">
                       <nav class="sidenav nav-docs">
                           <ul class="sidenav-holder" id="navbarCodeply">
-                              <!-- <a class="nav-link" href="#intro">One</a>
-                              <a class="nav-link" href="#project-structure">Two</a>
-                              <a class="nav-link" href="#sec3">Three</a> -->
-                              <!-- overview menu items-->
                               <li>
                                   <h6>Overview</h6>
                                   <ul>
-                                      <li><a class="nav-link" href="#intro">Introduction</a></li>
+                                      <li><a class="nav-link" href="#installation">Tools and Installation</a></li>
                                       <li><a class="nav-link" href="#project-structure">Project Structure</a></li>
                                       <li><a class="nav-link" href="">Basic HTML Markup</a></li>
                                       <li><a class="nav-link" href="">Tools and Installation</a></li>
@@ -113,14 +110,89 @@
                  <div class="main-comtent-area" data-spy="scroll" data-target="#scrollspy-navbar" data-offset="10">
                             <div class="each-menu-content-section">
                                 <h2>Overview</h2>
+                                <p>Below are the steps, you required to set up your website template. Noe get started:</p>
 
                                 <!-- introduction -->
-                                <div class="each-submenu-content-section" id="intro">
-                                    <h3>Introduction</h3>
-                                    <p>From Team Unifato, we thank you for purchasing our theme. Pages is carefully well thought UI frame work that is built on top of Bootstrap 4, Its hand crafted components look great on all devices and works super fast
-                                        even on mobile. If there's still any issue, you can contact us through our profile page at Themeforest here, or feel free to contact us through our email.</p>
+                                <div class="each-submenu-content-section" id="installation">
+                                    <h3>Tools and Installtion</h3>
+                                    <ol>
+                                      <li>
+                                        <p>Unzip the downloaded folder. Open the /HTML folder which contains all the files that are required to host your web server for your website. You have to use FTP for uploading these files.</p>
+                                      </li>
+                                      <li>
+                                        <p>Below is the folder structure of the downloaded folder:</p>
+                                        <div class="file-list">
+                                          <ul id="accordion" role="tablist" aria-multiselectable="true">
+                                              <li class="card">
+                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="folder">app /</a>
+                                                  <ul id="collapseOne" class="collapse show" role="tabpanel">
+                                                      <li>
+                                                          <a data-toggle="collapse" data-parent="#collapseOne" href="#collapseOne_one" aria-expanded="true" aria-controls="collapseOne_one" class="folder">css /</a>
+                                                          <ul class="collapse" id="collapseOne_one" role="tabpanel">
+                                                              <li><a href="#" class="folder">Thirdparty</a></li>
+                                                          </ul>
+                                                      </li>
+                                                      <li><a href="" class="folder">scss /</a></li>
+                                                      <li><a href="" class="folder">images /</a></li>
+                                                  </ul>
+                                              </li>
+                                              <li class="card">
+                                                  <a class="file">gulpfile.js</a>
+                                              </li>
+                                              <li class="card">
+                                                  <a class="file">package.json</a>
+                                              </li>
+                                              <li class="card">
+                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="folder">documentation /</a>
+                                                  <ul id="collapseTwo" class="collapse" role="tabpanel">
+                                                      <li>
+                                                          <a data-toggle="collapse" data-parent="#collapseOne" href="#collapseOne_one" aria-expanded="true" aria-controls="collapseOne_one" class="folder">css /</a>
+                                                      </li>
+                                                      <li><a href="" class="folder">scss /</a></li>
+                                                      <li><a href="" class="folder">images /</a></li>
+                                                      <li><a href="" class="file">documentation.html /</a></li>
+                                                  </ul>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                        <p>You should upload only that app folder with all those files that you need for your website. Now under this app/ folder start adding content, images, videos, fonts and other necessary items and modify things as you want. BEST OF LUCK!</p>
+                                        <p>Here is what we have under app/ folder: </p>
+                                        <ul>
+                                          <li><p><code>app/css</code> -- Stylesheet files</p></li>
+                                          <li><p><code>app/fonts</code> -- Icon font file</p></li>
+                                          <li><p><code>app/images</code> -- Image files</p></li>
+                                          <li><p><code>app/js</code> -- Javacript files</p></li>
+                                          <li><p><code>app/video</code> -- Video files</p></li>
+                                        </ul>
 
-                                    <p>For using this theme, Oscar, you would need basic understanding of HTML, CSS and Javascript, please give your question a quick Google or visit W3Schools as theme issues get top priority.</p>
+                                        <h6>Installation process for running it on local server using Gulp</h6>
+                                        <ol>
+                                          <li>Node Js: 
+                                              <p>We need gulp for compiling scss to css, and for configaring gulp we need Node Js and node packages. <a href="https://nodejs.org/en/" target="_blank">Click here</a> to install Node Js and follow the instructions.</p>
+                                          </li>
+                                          <li>Gulp install:
+                                           <p>After installing Node.js, you need to install Gulp on your system. Run <code>npm install -g gulp</code> command in Terminal/CMD of your system.</p>
+                                           </li>
+                                           <li>Npm install: 
+                                              <p>Open Terminal/CMD in the theme folder and run <code>npm install</code> command. This command will install all tools required for this theme.</p>
+                                          </li>
+                                          <li>
+                                            Running on Browser and compiling Sass:
+                                            <p>To start working, just open Terminal/CMD in the theme folder and run <code>gulp</code>. This will start the work environment for you. Now you can edit the theme in the Code Editor of your choice.</p>
+                                          </li>
+                                        </ol>
+                                      </li>
+                                    </ol>
+
+                                    <h3>Favicon</h3>
+                                    <p>To change the favicon image of your site, you will need a new ICO image in a site root or to point out a new address of the image.</p>
+                                    <!-- favicon -->
+                                    <pre>
+                                      <link rel="shortcut icon" href="images/favicon.png">
+                                      <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+                                      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+                                      <link rel="apple-touch-icon" sizes="114x114" href="images/<apple-touch-icon-114x114 class="png"></apple-touch-icon-114x114>">
+                                    </pre>
                                 </div>
                                 <!-- introduction -->
 
