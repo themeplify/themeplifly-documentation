@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" rel="stylesheet">
+    <link href="css/prism.min.css" rel="stylesheet">
     <link href="css/code-box-copy.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -111,221 +111,121 @@
                         <!-- aside ends -->
                     </div>
 
-                    <div class="col-md-9">
-                        <!-- main content starts -->
-                        <div class="main-comtent-area">
-                            <div class="each-menu-content-section">
-                                <h2>Overview</h2>
-
-                                <!-- introduction -->
-                                <div class="each-submenu-content-section" id="intro">
-                                    <h3>Introduction</h3>
-                                    <p>From Team Unifato, we thank you for purchasing our theme. Pages is carefully well thought UI frame work that is built on top of Bootstrap 4, Its hand crafted components look great on all devices and works super fast
-                                        even on mobile. If there's still any issue, you can contact us through our profile page at Themeforest here, or feel free to contact us through our email.</p>
-
-                                    <p>For using this theme, Oscar, you would need basic understanding of HTML, CSS and Javascript, please give your question a quick Google or visit W3Schools as theme issues get top priority.</p>
+                    <!-- main content starts -->
+                    <div class="col-md-8 content-area">
+                        <!-- Header Start -->
+                        <section id="header">
+                            <h1>Header</h1>
+                            <p>Here we have offer you 3 types of header veriation and 2 differnt banner option. You can easily change header by simply change a class name.</p>
+                            <!-- Transparent Header Start -->
+                            <div class="subsection" id="">
+                                <h2>1. Transparent Header</h2>
+                                <p>Header with no background color.</p>
+                                <img src="images/transparent-header.png" alt="transparent-header">
+                                <!-- CODEEEE -->
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#transparent-header" title="Copy"></button>
+<pre>
+<code class="language-html" id="transparent-header">&lt;nav class=&quot;navbar navbar-expand-lg bg-transparent fixed-top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+            &lt;img src=&quot;images/logo.png&quot; alt=&quot;&quot; class=&quot;light-logo&quot;&gt;
+            &lt;img src=&quot;images/dark-logo.png&quot; alt=&quot;&quot; class=&quot;dark-logo&quot;&gt;
+        &lt;/a&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarResponsive&quot; aria-controls=&quot;navbarResponsive&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+        &lt;span class=&quot;lnr lnr-menu&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarResponsive&quot;&gt;
+            &lt;ul class=&quot;navbar-nav ml-auto&quot; id=&quot;navbarCodeply&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                -----
+                &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
                                 </div>
-                                <!-- introduction -->
+                                <!-- CODEEEE -->                                
+                            </div>
+                            <!-- Transparent Header End -->
 
-                                <!-- project structure -->
-                                <div class="each-submenu-content-section" id="project-structure">
-                                    <h3>Project Structure</h3>
-                                    <p>1. Unzip the downloaded package and open the /HTML folder to find all the template files. You will need to upload these files to your hosting web server using FTP in order to use it on your website.</p>
-                                    <p>2. The following is the structure how the project is arranged. Click on the folder items below to check the sub folder items.</p>
-
-                                    <h4>Folder Structure</h4>
-                                    <div class="file-list">
-                                        <ul id="accordion" role="tablist" aria-multiselectable="true">
-                                            <li class="card">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="folder">app /</a>
-                                                <ul id="collapseOne" class="collapse show" role="tabpanel">
-                                                    <li>
-                                                        <a data-toggle="collapse" data-parent="#collapseOne" href="#collapseOne_one" aria-expanded="true" aria-controls="collapseOne_one" class="folder">css /</a>
-                                                        <ul class="collapse" id="collapseOne_one" role="tabpanel">
-                                                            <li><a href="#" class="folder">Thirdparty</a>
-                                                                <ul>
-                                                                    <li><a href="#" class="">app.css</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="" class="folder">scss /</a></li>
-                                                    <li><a href="" class="folder">images /</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="card">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="folder">node_modules /</a>
-                                                <ul id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                    <li><a href="" class="folder">css /</a></li>
-                                                    <li><a href="" class="folder">scss /</a></li>
-                                                    <li><a href="" class="folder">images /</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <!-- Dark Header Start -->
+                            <div class="subsection" id="">
+                                <h2>2. dark Header</h2>
+                                <p>Header with White color.</p>
+                                <img src="images/dark-header.png" alt="dark-header">
+                                <!-- CODEEEE -->
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#dark-header" title="Copy"></button>
+<pre>
+<code class="language-html" id="dark-header">&lt;nav class=&quot;navbar navbar-expand-lg bg-dark fixed-top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+            &lt;img src=&quot;images/logo.png&quot; alt=&quot;&quot; class=&quot;light-logo&quot;&gt;
+            &lt;img src=&quot;images/dark-logo.png&quot; alt=&quot;&quot; class=&quot;dark-logo&quot;&gt;
+        &lt;/a&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarResponsive&quot; aria-controls=&quot;navbarResponsive&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+        &lt;span class=&quot;lnr lnr-menu&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarResponsive&quot;&gt;
+            &lt;ul class=&quot;navbar-nav ml-auto&quot; id=&quot;navbarCodeply&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                -----
+                &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
                                 </div>
-                                <!-- project structure -->
-
-                                <!-- basic HTML markup -->
-                                <div class="each-submenu-content-section">
-                                    <h3>Basic HTML Markup</h3>
-
-
-                                    <pre class="code" data-language="js">
-        Your code snippet goes here.
-    </pre>
-                                    <code>
-                            <pre>&lt;!doctype html&gt;
-&lt;html class="no-js" lang="en"&gt;
-    &lt;head&gt;
-        <span class="comment">&lt;!-- title --&gt;</span>
-        &lt;meta charset="utf-8"&gt;
-        <span class="comment">&lt;!-- description --&gt;</span>
-        &lt;meta name="description" content=""&gt;
-        <span class="comment">&lt;!-- keywords --&gt;</span>
-        &lt;meta name="keywords" content=""&gt;
-        <span class="comment">&lt;!-- favicon --&gt;</span>
-        <span class="comment">&lt;!-- style --&gt;</span>
-    &lt;/head&gt;
-    &lt;body&gt;
-        <span class="comment">&lt;!-- start header --&gt;</span>
-        &lt;header&gt;
-            <span class="comment">&lt;!-- start navigation --&gt;</span>
-            &lt;nav class="navbar navbar-default bootsnav"&gt;
-                ...
-            &lt;/nav&gt;
-            <span class="comment">&lt;!-- end navigation --&gt;</span>
-        &lt;/header&gt;
-        <span class="comment">&lt;!-- end header --&gt;</span>
-        <span class="comment">&lt;!-- start sections --&gt;</span>
-        &lt;section&gt;
-            ...
-        &lt;/section&gt;
-        <span class="comment">&lt;!-- end sections --&gt;</span>
-        <span class="comment">&lt;!-- start footer --&gt;</span> 
-        &lt;footer&gt;
-            &lt;div class="container"&gt;
-                ...
-            &lt;/div&gt;
-        &lt;/footer&gt;
-        <span class="comment">&lt;!-- end footer --&gt;</span>
-        <span class="comment">&lt;!-- javascript libraries --&gt;</span>
-    &lt;/body&gt;
-&lt;/html&gt;
-                            </pre>
-                          </code>
-
-                                    <!-- CODEEEE -->
-                                    <div class="code-box-copy">
-                                        <button class="code-box-copy__btn" data-clipboard-target="#example-head" title="Copy"></button>
-                                        <pre><code class="language-html" id="example-head">&lt;!-- Cod Box Copy begin --&gt;
-            &lt;link href=&quot;prism/prism.min.css&quot; rel=&quot;stylesheet&quot;&gt;
-            &lt;link href=&quot;code-box-copy/css/code-box-copy.css&quot; rel=&quot;stylesheet&quot;&gt;
-            &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
-            &lt;script src=&quot;prism/prism.min.js&quot;&gt;&lt;/script&gt;
-            &lt;script src=&quot;clipboard/clipboard.min.js&quot;&gt;&lt;/script&gt;
-            &lt;script src=&quot;code-box-copy/js/code-box-copy.js&quot;&gt;&lt;/script&gt;
-            &lt;!-- Cod Box Copy end --&gt;</code></pre>
-                                    </div>
-                                    <!-- CODEEEE -->
+                                <!-- CODEEEE -->                                
+                            </div>
+                            <!-- Dark Header Start -->
+                            
+                            <!-- White Header Start -->
+                            <div class="subsection" id="">
+                                <h2>3. White  Header</h2>
+                                <p>Header with White color.</p>
+                                <img src="images/white-header.png" alt="white-header">
+                                <!-- CODEEEE -->
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#white-header" title="Copy"></button>
+<pre>
+<code class="language-html" id="white-header">&lt;nav class=&quot;navbar navbar-expand-lg bg-white fixed-top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+            &lt;img src=&quot;images/logo.png&quot; alt=&quot;&quot; class=&quot;light-logo&quot;&gt;
+            &lt;img src=&quot;images/dark-logo.png&quot; alt=&quot;&quot; class=&quot;dark-logo&quot;&gt;
+        &lt;/a&gt;
+        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarResponsive&quot; aria-controls=&quot;navbarResponsive&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+        &lt;span class=&quot;lnr lnr-menu&quot;&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarResponsive&quot;&gt;
+            &lt;ul class=&quot;navbar-nav ml-auto&quot; id=&quot;navbarCodeply&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                -----
+                &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code>
+</pre>
                                 </div>
-                                <!-- basic HTML markup -->
+                                <!-- CODEEEE -->                                
                             </div>
-                        </div>
-                        <!-- basic HTML markup -->
-                        <!-- start: tools and installation -->
-                        <div class="each-submenu-content-section">
-                            <h3>Tools</h3>
-                            <p>You need a couple of tools to work with the theme, alternatively you can directly use the dist/ folder provided in the project. Refer to the following list for tools you need :</p>
-                            <h6>1. Node.js</h6>
-                            <p>For making use of this theme true power you'll need Gulp, and for Gulp you'll need Node.js to be installed on your system. Download the latest version of Node.js from <a href="">here</a></p>
-                            <h6>2. Gulp</h6>
-                            <p>After installing Node.js, you need to install Gulp on your system. Run this command in Terminal/CMD of your system: <code>npm install -g gulp</code></p>
-                            <h6>3. Install Modules of the theme</h6>
-                            <p>Open Terminal/CMD in the theme folder and run this command : <code>npm install</code>. This command will install the tools required for this Oscar, for example build tools like SASS Compiler, Autoprefixer etc.</p>
-                            <h6>4. Running the environment</h6>
-                            <p>To start working with the theme, just open Terminal/CMD in the theme folder and run <code>gulp</code>. This will start the work environment for you. Now you can edit the theme in the Code Editor of your choice.</p>
-                            <h6>5. Making Distribution Folder</h6>
-                            <p>To make deployable theme, just open Terminal/CMD in the theme folder and run this command : <code>gulp dist</code>. This will generate dist/ folder in your theme directory. You can directly upload this folder to your server.</p>
-
-                            <h3>Installation</h3>
-                            <p>Oscar is a static HTML Template so you don't need much installing on the server-side. Just upload the /dist folder to your server and you have it running.</p>
-                            <span class="badge badge-pill badge-danger">Note : </span>
-                            <p>we recomonded you to please make your one own css file & one js files and add that in your page, so whenever the update of wrapkit comes it does not affect your code.</p>
-                        </div>
-                        <!-- end: tools and installation -->
-                        <!-- end: overview -->
-                        <!-- start: header -->
-                        <div class="each-menu-content-section">
-                            <h2>Header</h2>
-                            <!-- start: header types -->
-                            <div class="each-submenu-content-section">
-                                <h3>Header Types</h3>
-                                <p>Header area can be easily customized by simply adding any of the following classes to the <code>header</code> tag like this:</p>
-                                <pre class="mb-4">
-    &lt;header class="header-light header-centered"&gt;
-    ...
-    &lt;/header&gt;
-                          </pre>
-                                <table class="table table-bordered">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>Class</th>
-                                            <th>Description</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><code>.header-light</code></td>
-                                            <td>Header with white background and dark text.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>.header-dark</code></td>
-                                            <td>Header with dark background and white text.</td>
-                                        </tr>
-                                        <tr>
-                                            <td><code>.header-center</code></td>
-                                            <td>Header with center menu items and white text.</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="" class="btn btn-primary">Check live priview of headers</a>
-                            </div>
-                            <!-- end: header types -->
-
-                            <!-- start: logo -->
-                            <div class="each-submenu-content-section">
-                                <h3>Logos</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus impedit provident corporis vel molestias numquam eaque? Rem dolorem doloribus, distinctio voluptates recusandae odio, dolorum quibusdam, perferendis sint corporis
-                                    perspiciatis numquam.</p>
-                            </div>
-                            <!-- end: logo -->
-
-                            <!-- start: favicon -->
-                            <div class="each-submenu-content-section">
-                                <h3>Favicon</h3>
-                                <p>To change the favicon image of your site, you need to load a new ICO image in a site root or to point out a new address of the image.</p>
-                                <pre>
-                          <span class="comment">
-&lt;!-- favicon --&gt;</span>
-&lt;link rel="shortcut icon" href="images/favicon.png"&gt;
-&lt;link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png"&gt;
-&lt;link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"&gt;
-&lt;link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"&gt;
-                        </pre>
-                            </div>
-                            <!-- end: favicon -->
-
-                        </div>
-                        <!-- header end -->
+                            <!-- White Header Start -->
+                        </section>
+                        <!-- Header End -->        
                     </div>
+                    <!-- main content ends -->
                 </div>
-                <!-- main content ends -->
             </div>
-    </div>
-    </div>
-    </main>
-    <!-- main ends -->
+        </main>
+        <!-- main ends -->
 
     </div>
     <!-- webpage wrapper -->
@@ -336,8 +236,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="js/prism.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
     <script src="js/code-box-copy.js"></script>
     <script src="js/app.js"></script>
 </body>
