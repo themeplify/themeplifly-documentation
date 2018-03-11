@@ -2,6 +2,7 @@
 
     'use strict';
 
+    // sidebar position
     var main_pos = $('main').offset().top;
     var sidebarPos = function() {
         var scroll_ammount = $(window).scrollTop();
@@ -18,6 +19,7 @@
 
     sidebarPos();
 
+    // anchor smooth scroll
     $(document).on('click', 'a[href^="#"][class="nav-link"]', function(event) {
         event.preventDefault();
         $('html, body').animate({
@@ -25,4 +27,11 @@
         }, 500);
     });
 
+
+    $('.code-box-copy').codeBoxCopy({
+        tooltipText: 'Copied',
+        tooltipShowTime: 1000,
+        tooltipFadeInTime: 300,
+        tooltipFadeOutTime: 300
+    });
 })(jQuery);
