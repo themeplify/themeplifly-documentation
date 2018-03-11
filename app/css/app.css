@@ -8737,9 +8737,15 @@ img {
 ul {
   margin: 0;
   padding: 0; }
+  ul li {
+    list-style: none;
+    margin-bottom: 5px; }
 
 span.badge.badge-pill + p {
   display: inline; }
+
+section {
+  margin-bottom: 60px; }
 
 h1 {
   font-size: 1.875rem;
@@ -8754,7 +8760,9 @@ h2 {
   margin-bottom: 0.625rem; }
 
 h3 {
-  font-size: 1.125rem; }
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 30px; }
 
 h4 {
   font-size: 1.0625rem; }
@@ -8818,56 +8826,31 @@ aside {
   background-color: #000000;
   border: 2px solid #8b8b8b; }
 
-.main-comtent-area .each-submenu-content-section {
-  margin-bottom: 40px; }
-  .main-comtent-area .each-submenu-content-section .file-list {
-    margin-bottom: 1.25rem; }
-    .main-comtent-area .each-submenu-content-section .file-list ul {
-      margin-bottom: 0px; }
-      .main-comtent-area .each-submenu-content-section .file-list ul li.card {
-        border: 0px; }
-        .main-comtent-area .each-submenu-content-section .file-list ul li.card a {
-          color: #ff437d; }
-          .main-comtent-area .each-submenu-content-section .file-list ul li.card a:hover {
-            text-decoration: none; }
-          .main-comtent-area .each-submenu-content-section .file-list ul li.card a.folder:before {
-            content: "\f114";
-            font: normal normal normal 14px/1 FontAwesome;
-            margin-right: 0.3125rem; }
-          .main-comtent-area .each-submenu-content-section .file-list ul li.card a.file:before {
-            content: "\f1c9";
-            font: normal normal normal 14px/1 FontAwesome;
-            margin-right: 0.3125rem; }
-        .main-comtent-area .each-submenu-content-section .file-list ul li.card ul {
-          list-style: none;
-          padding-left: 0.9375rem; }
-        .main-comtent-area .each-submenu-content-section .file-list ul li.card .card-header {
-          background-color: transparent;
-          border: 0px;
-          padding: 0px; }
-  .main-comtent-area .each-submenu-content-section h6 {
-    text-transform: none;
-    margin-bottom: 0.5rem; }
-
-.main-comtent-area pre {
-  margin-bottom: 0px;
-  padding: 1.25rem;
-  background-color: #f6f6f6; }
-  .main-comtent-area pre span.comment {
-    color: #0aa11f; }
-
-.main-comtent-area table td {
-  font-size: 0.875rem; }
-
-.main-comtent-area ol {
-  padding-left: 15px; }
-  .main-comtent-area ol > li {
-    margin-bottom: 15px; }
-    .main-comtent-area ol > li ul {
-      margin-bottom: 15px; }
-      .main-comtent-area ol > li ul li {
+.file-list {
+  margin-bottom: 1.25rem; }
+  .file-list ul {
+    margin-bottom: 0px; }
+    .file-list ul li.card {
+      border: 0px; }
+      .file-list ul li.card a {
+        color: #ff437d; }
+        .file-list ul li.card a:hover {
+          text-decoration: none; }
+        .file-list ul li.card a.folder:before {
+          content: "\f114";
+          font: normal normal normal 14px/1 FontAwesome;
+          margin-right: 0.3125rem; }
+        .file-list ul li.card a.file:before {
+          content: "\f1c9";
+          font: normal normal normal 14px/1 FontAwesome;
+          margin-right: 0.3125rem; }
+      .file-list ul li.card ul {
         list-style: none;
-        margin-bottom: 5px; }
+        padding-left: 0.9375rem; }
+      .file-list ul li.card .card-header {
+        background-color: transparent;
+        border: 0px;
+        padding: 0px; }
 
 .fix_pos aside {
   position: fixed;
@@ -8879,6 +8862,9 @@ aside {
   margin-top: 55px; }
   .subsection img {
     border: 1px solid #ccc; }
+
+ol {
+  padding-left: 15px; }
 
 .btn {
   border-radius: 1.875rem;

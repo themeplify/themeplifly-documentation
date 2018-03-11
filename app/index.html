@@ -108,6 +108,156 @@
 
                     <!-- main content starts -->
                     <div class="col-md-8 content-area">
+                        <!-- overview Start -->
+                        <section id="overview">
+                         <h1>Overview</h1>
+                          <p>Below are the steps, you required to set up your website template. Noe get started:</p>
+                         <!--  tools and installation Start -->
+                         <div class="subsection" id="">
+                          <h2>Tools and Installtion</h2>
+                            <ol>
+                                        <li>
+                                          <p>Unzip the downloaded folder. Open the /HTML folder which contains all the files that are required to host your web server for your website. You have to use FTP for uploading these files.</p>
+                                        </li>
+                                        <li>
+                                          <p>Below is the folder structure of the downloaded folder:</p>
+                                          <div class="file-list">
+                                            <ul id="accordion" role="tablist" aria-multiselectable="true">
+                                                <li class="card">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="folder">app /</a>
+                                                    <ul id="collapseOne" class="collapse show" role="tabpanel">
+                                                        <li>
+                                                            <a data-toggle="collapse" data-parent="#collapseOne" href="#collapseOne_one" aria-expanded="true" aria-controls="collapseOne_one" class="folder">css /</a>
+                                                            <ul class="collapse" id="collapseOne_one" role="tabpanel">
+                                                                <li><a href="#" class="folder">Thirdparty</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="" class="folder">scss /</a></li>
+                                                        <li><a href="" class="folder">images /</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="card">
+                                                    <a class="file">gulpfile.js</a>
+                                                </li>
+                                                <li class="card">
+                                                    <a class="file">package.json</a>
+                                                </li>
+                                                <li class="card">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="folder">documentation /</a>
+                                                    <ul id="collapseTwo" class="collapse" role="tabpanel">
+                                                        <li>
+                                                            <a data-toggle="collapse" data-parent="#collapseOne" href="#collapseOne_one" aria-expanded="true" aria-controls="collapseOne_one" class="folder">css /</a>
+                                                        </li>
+                                                        <li><a href="" class="folder">scss /</a></li>
+                                                        <li><a href="" class="folder">images /</a></li>
+                                                        <li><a href="" class="file">documentation.html /</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                          </div>
+                                          <p>You should upload only that app folder with all those files that you need for your website. Now under this app/ folder start adding content, images, videos, fonts and other necessary items and modify things as you want. BEST OF LUCK!</p>
+                                          <p>Here is what we have under app/ folder: </p>
+                                          <ul>
+                                            <li><p><code>app/css</code> -- Stylesheet files</p></li>
+                                            <li><p><code>app/fonts</code> -- Icon font file</p></li>
+                                            <li><p><code>app/images</code> -- Image files</p></li>
+                                            <li><p><code>app/js</code> -- Javacript files</p></li>
+                                            <li><p><code>app/video</code> -- Video files</p></li>
+                                          </ul>
+
+                                          <h3>Installation process for running it on local server using Gulp</h3>
+                                          <ol>
+                                            <li>Node Js: 
+                                                <p>We need gulp for compiling scss to css, and for configaring gulp we need Node Js and node packages. <a href="https://nodejs.org/en/" target="_blank">Click here</a> to install Node Js and follow the instructions.</p>
+                                            </li>
+                                            <li>Gulp install:
+                                             <p>After installing Node.js, you need to install Gulp on your system. Run <code>npm install -g gulp</code> command in Terminal/CMD of your system.</p>
+                                             </li>
+                                             <li>Npm install: 
+                                                <p>Open Terminal/CMD in the theme folder and run <code>npm install</code> command. This command will install all tools required for this theme.</p>
+                                            </li>
+                                            <li>
+                                              Running on Browser and compiling Sass:
+                                              <p>To start working, just open Terminal/CMD in the theme folder and run <code>gulp</code>. This will start the work environment for you. Now you can edit the theme in the Code Editor of your choice.</p>
+                                            </li>
+                                          </ol>
+                                        </li>
+                            </ol>
+                          </div>
+                         <!--  tools and installation End -->
+                         <!-- favicon -->
+                          <div class="subsection">
+                            <h2>favicon</h2> 
+                            <p>To change the favicon image of your site, you will need a new ICO image in a site root or to point out a new address of the image.</p>
+                           <!-- CODEEEE -->
+                                    <div class="code-box-copy">
+                                        <button class="code-box-copy__btn" data-clipboard-target="#favicon" title="Copy"></button>
+<pre>
+<code class="language-html" id="favicon">&#x3C;!-- favicon start--&#x3E;
+&#x3C;link rel=&#x22;shortcut icon&#x22; href=&#x22;images/favicon.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;apple-touch-icon&#x22; href=&#x22;images/apple-touch-icon-57x57.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;apple-touch-icon&#x22; sizes=&#x22;72x72&#x22; href=&#x22;images/apple-touch-icon-72x72.png&#x22;&#x3E;
+&#x3C;link rel=&#x22;apple-touch-icon&#x22; sizes=&#x22;114x114&#x22; href=&#x22;images/apple-touch-icon-114x114.png&#x22;&#x3E;
+&#x3C;!-- favicon end--&#x3E;
+</code>
+</pre>
+                                    </div>
+                                    <!-- CODEEEE -->
+                         </div>
+                         <!-- favicon -->
+                         <div class="subsection">
+                          <h2>Basic HTML Structure</h2>
+                          <p>This is the basic html structure of a web page.</p>
+                                                     <!-- CODEEEE -->
+                                    <div class="code-box-copy">
+                                        <button class="code-box-copy__btn" data-clipboard-target="#basicHTML" title="Copy"></button>
+<pre>
+<code class="language-html" id="basicHTML">&#x3C;!doctype html&#x3E;
+&#x3C;html class=&#x22;no-js&#x22; lang=&#x22;en&#x22;&#x3E;
+    &#x3C;head&#x3E;
+        &#x3C;!-- title --&#x3E;
+        &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+        &#x3C;!-- description --&#x3E;
+        &#x3C;meta name=&#x22;description&#x22; content=&#x22;&#x22;&#x3E;
+        &#x3C;!-- keywords --&#x3E;
+        &#x3C;meta name=&#x22;keywords&#x22; content=&#x22;&#x22;&#x3E;
+        &#x3C;!-- favicon --&#x3E;
+        &#x3C;!-- style --&#x3E;
+    &#x3C;/head&#x3E;
+    &#x3C;body&#x3E;
+        &#x3C;!-- start header --&#x3E;
+        &#x3C;header&#x3E;
+            &#x3C;!-- start navigation --&#x3E;
+            &#x3C;nav class=&#x22;navbar navbar-default bootsnav&#x22;&#x3E;
+                ...
+            &#x3C;/nav&#x3E;
+            &#x3C;!-- end navigation --&#x3E;
+        &#x3C;/header&#x3E;
+        &#x3C;!-- end header --&#x3E;
+        &#x3C;!-- start sections --&#x3E;
+        &#x3C;section&#x3E;
+            ...
+        &#x3C;/section&#x3E;
+        &#x3C;!-- end sections --&#x3E;
+        &#x3C;!-- start footer --&#x3E; 
+        &#x3C;footer&#x3E;
+            &#x3C;div class=&#x22;container&#x22;&#x3E;
+                ...
+            &#x3C;/div&#x3E;
+        &#x3C;/footer&#x3E;
+        &#x3C;!-- end footer --&#x3E;
+        &#x3C;!-- javascript libraries --&#x3E;
+    &#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+
+</code>
+</pre>
+                                    </div>
+                                    <!-- CODEEEE -->
+                         </div>
+                        </section>
+                        <!-- overview End -->  
+
                         <!-- Header Start -->
                         <section id="header_types">
                             <h1>Header</h1>
@@ -225,7 +375,6 @@
 
     </div>
     <!-- webpage wrapper -->
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
