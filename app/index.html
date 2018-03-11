@@ -57,8 +57,8 @@
                                         <h6>Header</h6>
                                         <ul>
                                             <li><a class="nav-link" href="#header_types">Header Types</a></li>
-                                            <li><a class="nav-link" href="">Logos</a></li>
-                                            <li><a class="nav-link" href="">Menus and Submenus</a></li>
+                                            <li><a class="nav-link" href="#logo">Logo</a></li>
+                                            <li><a class="nav-link" href="#menu-link">Menu Link</a></li>
                                         </ul>
                                     </li>
                                     <!-- header menu items-->
@@ -67,8 +67,8 @@
                                     <li>
                                         <h6>Slider</h6>
                                         <ul>
-                                            <li><a class="nav-link" href="">Slider Types</a></li>
-                                            <li><a class="nav-link" href="">Revolution Slider</a></li>
+                                            <li><a class="nav-link" href="#static-image">Image Banner</a></li>
+                                            <li><a class="nav-link" href="#video-banner">Video Banner</a></li>
                                         </ul>
                                     </li>
                                     <!-- sliders menu items-->
@@ -259,12 +259,14 @@
                         <!-- overview End -->  
 
                         <!-- Header Start -->
-                        <section id="header_types">
+                        <section>
                             <h1>Header</h1>
-                            <p>Here we have offer you 3 types of header veriation and 2 differnt banner option. You can easily change header by simply change a class name.</p>
                             <!-- Transparent Header Start -->
-                            <div class="subsection" id="">
-                                <h2>1. Transparent Header</h2>
+                            <div id="header_types">
+                            <div class="subsection">
+                                <h2>Header Types</h2>
+                                <p>Here we have offer you 3 types of header veriation and 2 differnt banner option. You can easily change header by simply change a class name.</p>
+                                <h3>1. Transparent Header</h3>
                                 <p>Header with no background color.</p>
                                 <img src="images/transparent-header.png" alt="transparent-header">
                                 <!-- CODEEEE -->
@@ -298,8 +300,8 @@
                             <!-- Transparent Header End -->
 
                             <!-- Dark Header Start -->
-                            <div class="subsection" id="">
-                                <h2>2. dark Header</h2>
+                            <div class="subsection">
+                                <h3>2. dark Header</h3>
                                 <p>Header with dark background color.</p>
                                 <img src="images/dark-header.png" alt="dark-header">
                                 <!-- CODEEEE -->
@@ -332,8 +334,8 @@
                             <!-- Dark Header Start -->
                             
                             <!-- White Header Start -->
-                            <div class="subsection" id="">
-                                <h2>3. White  Header</h2>
+                            <div class="subsection">
+                                <h3>3. White  Header</h3>
                                 <p>Header with white background color.</p>
                                 <img src="images/white-header.png" alt="white-header">
                                 <!-- CODEEEE -->
@@ -363,9 +365,106 @@
                                 </div>
                                 <!-- CODEEEE -->                                
                             </div>
-                            <!-- White Header Start -->
+                            <!-- White Header End -->
+                            </div>
+                            
+                            <!-- Logo Header Start -->
+                            <div class="subsection" id="">
+                                <h2>Logo</h2>
+                                <p>You can put your logo into nav. You just have to replace your logo into images folder.</p>
+                                <!-- CODEEEE -->
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#logo" title="Copy"></button>
+<pre>
+<code class="language-html" id="logo">&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;images/logo.png&quot; alt=&quot;logo&quot;&gt;
+&lt;/a&gt;</code>
+</pre>
+                                </div>
+                                <!-- CODEEEE -->                                
+                            </div>
+                            <!-- Logo Header End -->
+
+                            
+                            <!-- Menu Link Start -->
+                            <div class="subsection" id="menu-link">
+                                <h2>Menu link</h2>
+                                <p>As you know this is a one page website, so each menu has linked to a particular section. In the below code we linked "What we offer" menu <mark>href="#what-we-offer"</mark> to the section <mark>id="what-we-offer"</mark> </p>
+                                <!-- CODEEEE -->
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#menulink" title="Copy"></button>
+<pre>
+<code class="language-html" id="menulink">&#x3C;ul class=&#x22;navbar-nav ml-auto&#x22; id=&#x22;navbarCodeply&#x22;&#x3E;
+    &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
+        &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#what-we-offer&#x22;&#x3E;What we offer&#x3C;/a&#x3E;
+    &#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;</code>
+</pre>
+                                </div>
+                                <div class="code-box-copy">
+                                    <button class="code-box-copy__btn" data-clipboard-target="#sectionlink" title="Copy"></button>
+<pre>
+<code class="language-html" id="sectionlink">&#x3C;section class=&#x22;section-padding bg-white what-we-offer animatedParent animateOnce&#x22; id=&#x22;what-we-offer&#x22;&#x3E;
+    ----
+&#x3C;/section&#x3E;</code>
+</pre>
+                                </div>
+                                <!-- CODEEEE -->                                
+                            </div>
+                            <!-- Menu Link End -->
+
                         </section>
-                        <!-- Header End -->        
+                        <!-- Header End -->   
+                        <!-- Banner Start -->
+                             <section>
+                                 <h1>Banner</h1>
+                                 <p>You can choose between 2 types of banner as mentioned below. </p>
+                                 <!-- static-image Start -->
+                                 <div class="subsection" id="static-image">
+                                     <h2>Image Banner</h2>
+                                     <p>Put your stunning image into the banner. You are able to add banner content as well.</p>
+                                     <img src="images/banner-image.png" alt="bannerimage">
+                                     <div class="code-box-copy">
+                                         <button class="code-box-copy__btn" data-clipboard-target="#bannerimage" title="Copy"></button>
+<pre>
+<code class="language-html" id="bannerimage">&#x3C;div class=&#x22;single-image-banner&#x22; id=&#x22;home&#x22;&#x3E;
+    &#x3C;img src=&#x22;images/banner-img.jpg&#x22; alt=&#x22;banner&#x22; class=&#x22;banner-img&#x22;&#x3E;
+    &#x3C;div class=&#x22;banner-content-holder&#x22;&#x3E;
+        &#x3C;h2 class=&#x22;display-4&#x22;&#x3E;The theme that helps you to build a&#x3C;/h2&#x3E;
+        &#x3C;h1 class=&#x22;display-1&#x22;&#x3E;PROFITABLE &#x3C;br&#x3E; BUSINESS&#x3C;/h1&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-primary-white&#x22;&#x3E;Get Started now&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-outline-primary-white&#x22;&#x3E;Download Theme&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+</pre>
+                                     </div>
+                                 </div>
+                                 <!-- static-image End -->
+
+                                 <!-- video-banner Start -->
+                                 <div class="subsection" id="video-banner">
+                                     <h2>Video Banner</h2>
+                                     <p>Give a moving effect to your website by put video banner.</p>
+                                     <div class="code-box-copy">
+                                         <button class="code-box-copy__btn" data-clipboard-target="#bannerimage" title="Copy"></button>
+<pre>
+<code class="language-html" id="bannerimage">&#x3C;div class=&#x22;video-banner&#x22; id=&#x22;home&#x22;&#x3E;
+    &#x3C;video autoplay loop width=&#x22;100%&#x22; height=&#x22;100%&#x22; poster=&#x22;video/video-poster.jpg&#x22;&#x3E; 
+      &#x3C;source src=&#x22;video/banner-video.mp4&#x22; type=&#x22;video/mp4&#x22;&#x3E;
+    &#x3C;/video&#x3E;
+    &#x3C;div class=&#x22;banner-content-holder&#x22;&#x3E;
+        &#x3C;h2 class=&#x22;display-4&#x22;&#x3E;The theme that helps you to build a&#x3C;/h2&#x3E;
+        &#x3C;h1 class=&#x22;display-1&#x22;&#x3E;PROFITABLE &#x3C;br&#x3E; BUSINESS&#x3C;/h1&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-primary-white&#x22;&#x3E;Get Started now&#x3C;/a&#x3E;
+        &#x3C;a href=&#x22;#&#x22; class=&#x22;btn btn-outline-primary-white&#x22;&#x3E;Download Theme&#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+</pre>
+                                     </div>
+                                 </div>
+                                 <!-- video-banner End -->
+                             </section>
+                             <!-- Banner End -->             
                     </div>
                     <!-- main content ends -->
                 </div>

@@ -8,7 +8,8 @@ aside {
         &.sidenav {
             h6 {
                 font-weight: bolder;
-                margin-bottom: 0px;
+                margin-bottom: 4px;
+                font-size: rem(13);
             }
             ul {
                 &.sidenav-holder {

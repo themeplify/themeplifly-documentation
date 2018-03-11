@@ -47,7 +47,17 @@
         overflow-y: auto;
     }
 }
-
+.content-area{
+	section{
+		padding: 0 0 30px;
+		margin-bottom: 25px; 
+		border-bottom: 2px solid #ccc;
+		&:last-of-type{
+			border: 0;
+			padding: 0;
+		}
+	}
+}
 .subsection{
 	margin-top: 55px;
 	img{
