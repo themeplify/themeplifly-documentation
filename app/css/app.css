@@ -8802,6 +8802,8 @@ aside {
   aside nav.sidenav ul.sidenav-holder > li > ul {
     padding-left: 0.9375rem;
     list-style: none; }
+    aside nav.sidenav ul.sidenav-holder > li > ul li .nav-link {
+      padding: 2px 0px; }
     aside nav.sidenav ul.sidenav-holder > li > ul li a.active {
       color: #ff437d;
       text-decoration: none; }
@@ -8819,25 +8821,30 @@ aside {
 .main-comtent-area .each-submenu-content-section {
   margin-bottom: 40px; }
   .main-comtent-area .each-submenu-content-section .file-list {
-    padding-left: 0.9375rem;
     margin-bottom: 1.25rem; }
-    .main-comtent-area .each-submenu-content-section .file-list ul li.card {
-      border: 0px; }
-      .main-comtent-area .each-submenu-content-section .file-list ul li.card a {
-        color: #ff437d; }
-        .main-comtent-area .each-submenu-content-section .file-list ul li.card a:hover {
-          text-decoration: none; }
-        .main-comtent-area .each-submenu-content-section .file-list ul li.card a.folder:before {
-          content: "\f114";
-          font: normal normal normal 14px/1 FontAwesome;
-          margin-right: 0.3125rem; }
-      .main-comtent-area .each-submenu-content-section .file-list ul li.card ul {
-        list-style: none;
-        padding-left: 0.9375rem; }
-      .main-comtent-area .each-submenu-content-section .file-list ul li.card .card-header {
-        background-color: transparent;
-        border: 0px;
-        padding: 0px; }
+    .main-comtent-area .each-submenu-content-section .file-list ul {
+      margin-bottom: 0px; }
+      .main-comtent-area .each-submenu-content-section .file-list ul li.card {
+        border: 0px; }
+        .main-comtent-area .each-submenu-content-section .file-list ul li.card a {
+          color: #ff437d; }
+          .main-comtent-area .each-submenu-content-section .file-list ul li.card a:hover {
+            text-decoration: none; }
+          .main-comtent-area .each-submenu-content-section .file-list ul li.card a.folder:before {
+            content: "\f114";
+            font: normal normal normal 14px/1 FontAwesome;
+            margin-right: 0.3125rem; }
+          .main-comtent-area .each-submenu-content-section .file-list ul li.card a.file:before {
+            content: "\f1c9";
+            font: normal normal normal 14px/1 FontAwesome;
+            margin-right: 0.3125rem; }
+        .main-comtent-area .each-submenu-content-section .file-list ul li.card ul {
+          list-style: none;
+          padding-left: 0.9375rem; }
+        .main-comtent-area .each-submenu-content-section .file-list ul li.card .card-header {
+          background-color: transparent;
+          border: 0px;
+          padding: 0px; }
   .main-comtent-area .each-submenu-content-section h6 {
     text-transform: none;
     margin-bottom: 0.5rem; }
@@ -8851,6 +8858,16 @@ aside {
 
 .main-comtent-area table td {
   font-size: 0.875rem; }
+
+.main-comtent-area ol {
+  padding-left: 15px; }
+  .main-comtent-area ol > li {
+    margin-bottom: 15px; }
+    .main-comtent-area ol > li ul {
+      margin-bottom: 15px; }
+      .main-comtent-area ol > li ul li {
+        list-style: none;
+        margin-bottom: 5px; }
 
 .fix_pos aside {
   position: fixed;
