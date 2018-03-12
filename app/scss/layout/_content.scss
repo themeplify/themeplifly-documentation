@@ -68,3 +68,18 @@
 ol{
 	padding-left: 15px;
 }
+// colors
+.color-holder{
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+	.color{
+		height: 80px;
+	}
+	.color-detail{
+		padding: 5px;
+		border-top: 1px solid #ddd;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
