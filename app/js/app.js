@@ -34,4 +34,20 @@
         tooltipFadeInTime: 300,
         tooltipFadeOutTime: 300
     });
+
+    $('#to-top').bind('click', function() {
+        $('body,html').animate({
+                scrollTop: 0
+            },
+            1500);
+    });
+    $(window).scroll(function() {
+
+        // scroll to top
+        if ($(this).scrollTop() > 1000) {
+            $('#to-top').fadeIn();
+        } else {
+            $('#to-top').fadeOut();
+        }
+    });
 })(jQuery);
