@@ -672,56 +672,131 @@
                                 <!-- buttons end -->
                                </section>
                                <!-- ui elements End -->    
+
+                                <!-- Pages Start -->
+                                <section>
+                                    <h1>Pages</h1>
+                                    <p>Here you can set your blog single page and 404 page. You can find these two page inside the app folder.</p>
+                                    <!-- single blog Start -->
+                                    <div class="subsection" id="single-blog">
+                                        <h2>Single Blog Page</h2>
+                                        <p>If you have blogs then you must need a single blog page to show your blog detail. You can set a hader image for this page. </p>
+                                        <img src="images/blog-banner.png" alt="blog banner">
+                                        <div class="code-box-copy">
+                                            <button class="code-box-copy__btn" data-clipboard-target="#blog-banner" title="Copy"></button>
+<pre>
+<code class="language-html" id="blog-banner">&#x3C;div class=&#x22;single-image-banner&#x22; id=&#x22;home&#x22;&#x3E;
+    &#x3C;img src=&#x22;images/blog-header-img.jpg&#x22; alt=&#x22;banner&#x22; class=&#x22;banner-img&#x22;&#x3E;
+&#x3C;/div&#x3E;</code>
+</pre>
+                                        </div>
+                                        <br>
+                                        <p>If you have blogs then you must need a single blog page to show your blog detail. You can set a hader image for this page. </p>
+                                        <img src="images/blog-detail.png" alt="blog banner">
+                                        <div class="code-box-copy">
+                                            <button class="code-box-copy__btn" data-clipboard-target="#blog-content" title="Copy"></button>
+<pre>
+<code class="language-html" id="blog-content">&#x3C;div class=&#x22;post-content-wrap&#x22;&#x3E;
+    &#x3C;div class=&#x22;post-meta&#x22;&#x3E;
+        &#x3C;span&#x3E;&#x3C;i class=&#x22;fa fa-user&#x22;&#x3E;&#x3C;/i&#x3E; By &#x3C;a href=&#x22;#&#x22;&#x3E;John Doe&#x3C;/a&#x3E; &#x3C;/span&#x3E;
+        &#x3C;span&#x3E;&#x3C;i class=&#x22;fa fa-tag&#x22;&#x3E;&#x3C;/i&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;Blog&#x3C;/a&#x3E;, &#x3C;a href=&#x22;#&#x22;&#x3E;News&#x3C;/a&#x3E; &#x3C;/span&#x3E;
+        &#x3C;span&#x3E;&#x3C;i class=&#x22;fa fa-comments&#x22;&#x3E;&#x3C;/i&#x3E; &#x3C;a href=&#x22;#&#x22;&#x3E;12 Comments&#x3C;/a&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;h3 class=&#x22;blog-title&#x22;&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing&#x3C;/h3&#x3E;
+    &#x3C;div class=&#x22;blog-content&#x22;&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt
+            nisl ante nec tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit,
+            mauris ligula porta nisi, non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus
+            nibh. Donec mollis commodo metus et fringilla. Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet dolor. Vestibulum vehicula scelerisque facilisis. Sed
+            faucibus placerat bibendum. Maecenas sollicitudin commodo justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius sit amet hendrerit id, egestas quis mauris.&#x3C;/p&#x3E;
+        &#x3C;div class=&#x22;post-nav&#x22;&#x3E;
+            &#x3C;button class=&#x22;btn btn-primary next-post-btn&#x22;&#x3E;Next post&#x3C;/button&#x3E;
+            &#x3C;button class=&#x22;btn btn-primary prev-post-btn&#x22;&#x3E;Prev post&#x3C;/button&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E; 
+&#x3C;/div&#x3E;</code>
+</pre>
+                                        </div>
+                                        <br>    
+                                        <p>You will also find sidebar</p>
+                                        <img src="images/blog-sidebar.png" alt="sidebar">
+                                    </div>
+                                    <!-- single blog End -->
+                                    <!-- 404 Start -->
+                                    <div class="subsection" id="page-404">
+                                        <h2>404 page</h2>
+                                        <p>If you want redirect any wrong url to 404 then you can use this 404 page. </p>
+                                        <img src="images/404-page.png" alt="404">
+                                        <div class="code-box-copy">
+                                            <button class="code-box-copy__btn" data-clipboard-target="#code-404" title="Copy"></button>
+<pre>
+<code class="language-html" id="code-404">&#x3C;div class=&#x22;holder-404&#x22;&#x3E;
+    &#x3C;div class=&#x22;content-404 animatedParent&#x22; data-sequence=&#x27;500&#x27;&#x3E;
+        &#x3C;h1 class=&#x22;display-1 animated bounceInRight&#x22; data-id=&#x27;1&#x27;&#x3E;4&#x3C;/h1&#x3E;
+        &#x3C;h1 class=&#x22;display-1 animated bounceInDown&#x22; data-id=&#x27;2&#x27;&#x3E;0&#x3C;/h1&#x3E;
+        &#x3C;h1 class=&#x22;display-1 animated bounceInDown&#x22; data-id=&#x27;3&#x27;&#x3E;4&#x3C;/h1&#x3E;
+        &#x3C;h2 class=&#x22;display-2&#x22;&#x3E;PAGE NOT FOUND&#x3C;/h2&#x3E;
+        &#x3C;p&#x3E;The page you are looking for was moved, removed, renamed or might never existed.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;</code>
+</pre>
+                                        </div>
+                                    </div>
+                                    <!-- 404 End -->    
+                                </section>
+                                <!-- Pages End -->        
+
                                <!-- Others Start -->
-                                    <section>
-                                     <h1>Others</h1>
-                                     <p>Here are some other important informations that we like to share with you</p>
-                                     <!--  Credits Start -->
-                                     <div class="subsection" id="credits">
-                                      <h2>Credits</h2>
-                                      <p>We would like to thank you all, whose items are really so fantastic which help us to push Themeplify to an extend. Thank you all :)</p>
-                                      <div class="row">
-                                        <div class="col-md-4">
-                                          <h3>Css and fonts</h3>
-                                            <ul>
-                                              <li>Bootstrap</li>
-                                              <li>Animation</li>
-                                              <li>Font-Awesome</li>
-                                              <li>Linear Icons</li>
-                                              <li>Google Fonts</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <h3>Js library</h3>
-                                            <ul>
-                                              <li>jQuery</li>
-                                              <li>Animation</li>
-                                              <li>Owl</li>
-                                              <li>Animate It</li>
-                                              <li>prism</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <h3>Images and Videos</h3>
-                                            <ul>
-                                              <li>Pexels</li>
-                                              <li>Unsplash</li>
-                                            </ul>
-                                        </div>
-                                      </div>
-                                     </div>
-                                     <!--  Credits End -->
-                                     <!-- changelog -->
-                                     <div class="subsection" id="changelog">
-                                      <h2>Changelog</h2>
-                                      <p><b>Version 1.0 - Current Version.</b> Released on 23rd March 2015</p>
-                                      <ul>
-                                        <li>23/03/2018 -- 1.0 version released. Initial release.</li>
-                                      </ul>
-                                     </div>
-                                     <!-- changelog -->
-                                    </section>
-                                    <!-- Others End -->  
+                                <section>
+                                 <h1>Others</h1>
+                                 <p>Here are some other important informations that we like to share with you</p>
+                                 <!--  Credits Start -->
+                                 <div class="subsection" id="credits">
+                                  <h2>Credits</h2>
+                                  <p>We would like to thank you all, whose items are really so fantastic which help us to push Themeplify to an extend. Thank you all :)</p>
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <h3>Css and fonts</h3>
+                                        <ul>
+                                          <li>Bootstrap</li>
+                                          <li>Animation</li>
+                                          <li>Font-Awesome</li>
+                                          <li>Linear Icons</li>
+                                          <li>Google Fonts</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <h3>Js library</h3>
+                                        <ul>
+                                          <li>jQuery</li>
+                                          <li>Animation</li>
+                                          <li>Owl</li>
+                                          <li>Animate It</li>
+                                          <li>prism</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <h3>Images and Videos</h3>
+                                        <ul>
+                                          <li>Pexels</li>
+                                          <li>Unsplash</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                 </div>
+                                 <!--  Credits End -->
+                                 <!-- changelog -->
+                                 <div class="subsection" id="changelog">
+                                  <h2>Changelog</h2>
+                                  <p><b>Version 1.0 - Current Version.</b> Released on 23rd March 2015</p>
+                                  <ul>
+                                    <li>23/03/2018 -- 1.0 version released. Initial release.</li>
+                                  </ul>
+                                 </div>
+                                 <!-- changelog -->
+                                </section>
+                                <!-- Others End -->  
                     </div>
                     <!-- main content ends-->
             </div>
