@@ -8795,6 +8795,9 @@ header {
   padding: 70px 0px;
   color: #ffffff;
   margin-bottom: 3.125rem; }
+  header h1 {
+    color: #ffffff;
+    font-weight: bold; }
 
 aside {
   padding: 0.625rem;
