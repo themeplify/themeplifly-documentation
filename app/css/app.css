@@ -8804,7 +8804,8 @@ aside {
   width: 260px; }
   aside nav.sidenav h6 {
     font-weight: bolder;
-    margin-bottom: 0px; }
+    margin-bottom: 4px;
+    font-size: 0.8125rem; }
   aside nav.sidenav ul.sidenav-holder > li {
     margin-bottom: 0.9375rem; }
   aside nav.sidenav ul.sidenav-holder > li > ul {
@@ -8857,6 +8858,14 @@ aside {
   top: 0;
   left: 15px;
   overflow-y: auto; }
+
+.content-area section {
+  padding: 0 0 30px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #ccc; }
+  .content-area section:last-of-type {
+    border: 0;
+    padding: 0; }
 
 .subsection {
   margin-top: 55px; }
