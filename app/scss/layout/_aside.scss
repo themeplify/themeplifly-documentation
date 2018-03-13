@@ -14,12 +14,13 @@ aside {
             ul {
                 &.sidenav-holder {
                     &>li {
-                        margin-bottom: rem(15);
+                        margin-bottom: rem(30);
                     }
                     &>li>ul {
                         padding-left: rem(15);
                         list-style: none;
                         li {
+                            margin-bottom: 0px;
                             .nav-link{
                                 padding: 2px 0px;
                             }

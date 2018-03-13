@@ -8829,15 +8829,17 @@ aside {
     margin-bottom: 4px;
     font-size: 0.8125rem; }
   aside nav.sidenav ul.sidenav-holder > li {
-    margin-bottom: 0.9375rem; }
+    margin-bottom: 1.875rem; }
   aside nav.sidenav ul.sidenav-holder > li > ul {
     padding-left: 0.9375rem;
     list-style: none; }
-    aside nav.sidenav ul.sidenav-holder > li > ul li .nav-link {
-      padding: 2px 0px; }
-    aside nav.sidenav ul.sidenav-holder > li > ul li a.active {
-      color: #ff437d;
-      text-decoration: none; }
+    aside nav.sidenav ul.sidenav-holder > li > ul li {
+      margin-bottom: 0px; }
+      aside nav.sidenav ul.sidenav-holder > li > ul li .nav-link {
+        padding: 2px 0px; }
+      aside nav.sidenav ul.sidenav-holder > li > ul li a.active {
+        color: #ff437d;
+        text-decoration: none; }
 
 #style-4::-webkit-scrollbar-track {
   background-color: #f3f3f3; }
@@ -8858,7 +8860,8 @@ aside {
       .file-list ul li.card a {
         color: #ff437d; }
         .file-list ul li.card a:hover {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #ff437d; }
         .file-list ul li.card a.folder:before {
           content: "\f114";
           font: normal normal normal 14px/1 FontAwesome;
