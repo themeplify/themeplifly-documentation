@@ -471,7 +471,7 @@
                                  <!-- video-banner End -->
                              </section>
                              <!-- Banner End -->   
-                                                     <!-- ui elements Start -->
+                                <!-- ui elements Start -->
                                <section>
                                 <h1>UI Elements</h1>
                                 <p>Below are some UI elements which you can refer to for further development.</p>
@@ -676,7 +676,57 @@
                                 </div>
                                 <!-- buttons end -->
                                </section>
-                               <!-- ui elements End -->    
+                               <!-- ui elements End --> 
+                               <!-- Contcat Form Start -->
+                                  <section>
+                                      <h1>Contact Form</h1>
+                                      <p>Here you can configure your contact form. You will find a file by name data.php inside php folder. </p>                                      
+                                      <p><img src="images/contact.png" alt="contact"></p>
+                                      <p>Please replace your mail id with the dummy email id (yourmailid@mail.com) and Your company name inspite of themeplify. you can also edit header sunbject or message text.</p>
+                                      <div class="code-box-copy">
+                                          <button class="code-box-copy__btn" data-clipboard-target="#" title="Copy"></button>
+<pre>
+<code class="language-html" id="">$to = &#x27;deepkarmakar61@gmail.com&#x27;;
+
+$name=$_POST[&#x27;name&#x27;];
+$email=$_POST[&#x27;email&#x27;];
+$captcha=$_POST[&#x27;captcha&#x27;];
+$sub=$_POST[&#x27;subject&#x27;];
+$msg=$_POST[&#x27;message&#x27;];
+//exit;
+$from=&#x22;From: deepkarmakar61@gmail.com&#x22;;
+$revertfrom=&#x22;From: themeplify&#x22;;
+
+$subject = &#x27;Inquiry Through :: themeplify&#x27;;
+
+$revertsubject = &#x27;Through :: themeplify&#x27;;
+
+$message = &#x22;Inquiry Through :: themeplify - \n\n
+
+Name : $name\n
+Subject  : $sub\n
+Email  : $email\n
+Message : $msg\n\n
+Thanking You,
+$name
+&#x22;;
+$revertmessage = &#x22;Through :: themeplify \n\n
+
+Thank You, we will contact you soon.&#x22;;
+
+$headers  = &#x27;MIME-Version: 1.0&#x27; . &#x22;\r\n&#x22;;
+$headers .= &#x27;Content-type: text/plain; charset=iso-8859-1&#x27; . &#x22;\r\n&#x22;;
+
+// Additional headers
+$headers .= &#x27;To: &#x27;.$to. &#x22;\r\n&#x22;;
+$headers .= &#x22;From: deepkarmakar61@gmail.com\r\n&#x22;;
+
+$revertheaders .= &#x27;To: &#x27;.$email. &#x22;\r\n&#x22;;
+$revertheaders .= &#x22;From: deepkarmakar61@gmail.com\r\n&#x22;;</code>
+</pre>
+                                          </div>
+                                  </section>
+                                  <!-- Contcat Form End -->           
 
                                 <!-- Pages Start -->
                                 <section>
